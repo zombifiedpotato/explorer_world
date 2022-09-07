@@ -1,4 +1,4 @@
-package com.github.ZombifiedPatato.explorer_world;
+package com.github.zombifiedpotato.explorer_world;
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;

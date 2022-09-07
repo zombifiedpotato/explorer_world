@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.github.ZombifiedPatato.explorer_world.Main"
+      "com.github.zombifiedpotato.explorer_world.Main"
     ]
   },
   "mixins": [
