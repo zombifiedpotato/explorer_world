@@ -1,0 +1,13 @@
+{
+  "type": "explorer_world:explorer_world",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "seed": 286956243,
+    "biome_source": {
+      "type": "multi_noise",
+      "preset": "overworld"
+    }
+
+  }
+}
