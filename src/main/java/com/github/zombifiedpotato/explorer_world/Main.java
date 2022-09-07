@@ -1,7 +1,9 @@
 package com.github.zombifiedpotato.explorer_world;
 
+import com.github.zombifiedpotato.explorer_world.world.dimension.InstableWorldManager;
 import com.github.zombifiedpotato.explorer_world.world.dimension.ModDimensions;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.Identifier;
@@ -24,6 +26,7 @@ public class Main implements ModInitializer {
 				.destDimID(new Identifier(MOD_ID, "explorer_world"))
 				.tintColor(255, 246, 168)
 				.registerPortal();
+		ServerTickEvents.END_WORLD_TICK.register((InstableWorldManager::worldTick));
 	}
 
 
